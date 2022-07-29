@@ -1,0 +1,65 @@
+
+:root {
+    --color-original: #fe871e;
+}
+
+/* RULES PAGE */
+.page-body .container {
+    padding-top: 40px;
+}
+.page-body .container .panel{
+    padding: 44px 208px 88px;
+}
+.post-title {
+    padding-bottom: 12px;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+}
+.post-full-content {
+    letter-spacing: .8px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.post-content a {
+    color: var(--color-original);
+}
+.post-content-span {
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 1px;
+    margin: 46px 0;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* SUPPORT PAGE */
+.notification {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #16181e;
+}
+.notification-icon {
+    font-size: 24px;
+    color: var(--color-original);
+}
+.notification p {
+    flex: 1;
+    margin-left: 16px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.notification a {
+    background-color: #26201e;
+    display: flex;
+    padding: 16px 28px;
+}
+
+.post-content .is-orange{
+    display: inline-flex;
+    margin-top: 40px;
+    color: #643515;
+    background-image: linear-gradient(180deg,#ffa351,#fe871e);
+}

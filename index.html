@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title></title>
+<!-- InstanceEndEditable -->
+<meta charset="UTF-8">
+<link rel="stylesheet" href="public/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body class="ndzn-body">
+        <div class="flex flex-col min-h-full" id="ndzn-app">
+
+            <header class="ndzn-header" id="ndzn-header">
+  <canvas id="ndzn-header-canvas"></canvas>
+
+  <section class="top">
+    <div class="container flex items-center">
+      <nav class="nav-pages flex items-center">
+        <div class="navigation-web flex items-center">
+              <a class="nav-link flex-center" href="/index.html">
+                    <span>Trang chủ</span>
+                </a> 
+                <a class="nav-link flex-center" href="#">
+                    <span>Cộng đồng</span>
+                </a>
+                <a class="nav-link flex-center" href="/rules.html">
+                    <span>Luật</span>
+                </a>
+                <a class="nav-link flex-center" href="/support.html">
+                    <span>Hỗ trợ</span>
+                </a>
+
+        </div>
+
+        <button class="mobile-nav-btn nav-link flex items-center" onclick="openMobileMenu()">
+          <i class="mdi mdi-menu mr-2.5 relative text-[28px]"></i>
+          <span>Menu</span>
+        </button>
+      </nav>
+
+      <nav class="nav-redirects flex items-center ml-auto">
+        <i class="nav__discord-icon-small fa-brands fa-discord mr-7 xl:mr-4 relative top-1"></i>
+        <div class="nav__store">
+            <a style="color: #643515 ;" class="nav-link btn" href="https://store.mc-blaze.com/">
+                <i class="nav__store-icon fa-solid fa-coins"></i>
+                Donate
+            </a>
+        </div>
+      </nav>
+
+    </div>
+  </section>
+
+  <section class="bottom">
+    <div class="container flex items-center">
+      <a class="header-server-ip ndzn-js--copyip" href="javascript:;">
+        <div class="text text-right">
+          <span class="big">alphamcbe.ddns.net</span>
+          <span class="small"><span class="ndzn-js--playercount">0</span>
+            người đang chơi</span>
+        </div>
+
+        <!-- <i class="mdi mdi-minecraft ml-7 xl:ml-5 relative top-0.5"></i> -->
+        <i class="minecraft-icon fa-solid fa-gamepad ml-7 xl:ml-5 relative top-0.5"></i>
+      </a>
+
+      <div class="header-logo">
+        <!-- <div class="dragon"></div>
+        <div class="blaze"></div> -->
+      </div>
+      <div class="devider"></div>
+
+      <a class="header-discord" href="#" target="_blank">
+        <i class="nav__discord-icon fa-brands fa-discord mr-7 xl:mr-4 relative top-1"></i>
+        <div class="text text-left">
+          <span class="big">Tham gia Discord</span>
+          <div class="small"><span class="ndzn-js--discordcount">0</span>
+            người đang online</div>
+        </div>
+      </a>
+    </div>
+
+  </section>
+</header>
+
+<div class="modal is-slide-up" id="copy-ip-modal" aria-hidden="true">
+  <div tabindex="-1" class="modal-dialog" data-modal-close="">
+    <div class="modal-box modal-body" role="dialog" data-modal-close="" aria-modal="true">
+      <div class="header-logo"></div>
+      <p class="desc">Copied to Clipboard</p>
+      <h1 class="ip">play.mc-blaze.com</h1>
+      <div class="btn btn-success">
+        <span>We can't wait to see you in-game!</span>
+        <span>Click anywhere to close.</span>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="mobile-nav" id="mobile-nav">
+  <div class="backdrop" onclick="closeMobileMenu()"></div>
+  <div class="nav-collapse">
+    <button class="close-menu" onclick="closeMobileMenu()"><i class="mdi mdi-close"></i></button>
+    <div class="nav-header">
+      <div class="logo"></div>
+      <a class="#"><i class="mdi mdi-twitter"></i></a>
+      <a class="mr-1" href="#" target="_blank"><img alt="Discord" src="/assets/images/svg/discord-mobile.svg?v=b13c5aa825"></a>
+    </div>
+    <div class="nav-content">
+          <a class="nav-link flex-center" href="https://mc-blaze.com">
+        <span>Home</span>
+    </a>
+    <a class="nav-link flex-center" href="https://mc-blaze.com/vote/">
+        <span>Vote</span>
+    </a>
+    <a class="nav-link flex-center" href="https://mc-blaze.com/staff/">
+        <span>Staff</span>
+    </a>
+    <a class="nav-link flex-center" href="https://mc-blaze.com/how-to-play/">
+        <span>Play</span>
+    </a>
+    <a class="nav-link flex-center" href="https://mc-blaze.com/rules/">
+        <span>Rules</span>
+    </a>
+    <a class="nav-link flex-center" href="https://mc-blaze.com/support/">
+        <span>Support</span>
+    </a>
+
+      <a class="nav-link btn is-orange" href="https://store.mc-blaze.com/">
+        <i class="mdi mdi-storefront text-[22px] mr-2.5"></i>
+        Store
+      </a>
+    </div>
+  </div>
+</div>
+            <div class="page-body">
+                <div class="container">
+
+                    
+<!-- InstanceBeginEditable name="body" -->
+<main class="ndzn-homepage">
+  <section class="panel welcome-section flex items-center">
+    <div class="text">
+      <h1 class="text-[22px]">Chào mừng đến với The Alpha</h1>
+      <p class="mt-5 mb-3 leading-7">
+        We aim to provide you with the highest quality Pixelmon Reforged, OP
+        Skyblock, Survival and Creative gameplay you can find.
+      </p>
+      <p>Tham gia tại <b>alphamcbe.ddns.net</b></p>
+    </div>
+    <div class="links flex items-center">
+      <a class="link link-vote" href="/how-to-play">
+        <img alt="" src="assets/img/vote-char.png">
+        <b>Cộng đồng</b>
+        <small>Chia sẻ niềm vui</small>
+      </a>
+
+      <a class="link link-store" href="https://store.mc-blaze.com/">
+        <img alt="" src="assets/img/store-char.png">
+        <b>Hỗ trợ</b>
+        <small>Giải đáp thắc mắc</small>
+      </a>
+    </div>
+  </section>
+
+  <h2 class="section-title"><span>Latest Update:</span></h2>
+
+      <section class="posts-grid is-latest">
+              <a class="panel post-link post" href="/survival-1-19-reset-2/">
+
+  <div class="link-body">
+      <figure class="post-image">
+        <img alt="Jurassic Survival 1.19 Reset" src="assets/img/hus0000.png">
+      </figure>
+
+    <div class="content">
+
+      <h2 class="link-title text-[28px]">Jurassic Survival 1.19 Reset</h2>
+      <div class="link-tags">
+      </div>
+      <div class="link-date">
+        <time datetime="2022-06-26">26 June 2022</time>
+      </div>
+
+        <p>Hello survival enthusiasts!It's been a VERY long time coming but we are here to announce our impending Jurassic Survival server reset!  We are excited to announce that Jurassic Survival</p>
+    </div>
+  </div>
+</a>      </section>
+
+    <h2 class="section-title"><span>All News:</span></h2>
+
+    <section class="posts-grid">
+
+        
+
+
+                    <a class="panel post-link post" href="/survival-1-19-reset-2/">
+
+  <div class="link-body">
+      <figure class="post-image">
+        <img alt="Jurassic Survival 1.19 Reset" src="assets/img/hus0000.png">
+      </figure>
+
+    <div class="content">
+
+      <h2 class="link-title text-[28px]">Jurassic Survival 1.19 Reset</h2>
+      <div class="link-tags">
+      </div>
+      <div class="link-date">
+        <time datetime="2022-06-26">26 June 2022</time>
+      </div>
+
+        <p>Hello survival enthusiasts!It's been a VERY long time coming but we are here to announce our impending Jurassic Survival server reset!  We are excited to announce that Jurassic Survival</p>
+    </div>
+  </div>
+</a>
+
+                    <a class="panel post-link post tag-skyblock" href="/skyblock-reset/">
+
+  <div class="link-body">
+      <figure class="post-image">
+        <img alt="Blaze Skyblock Reset" src="assets/img/hus0001.png">
+      </figure>
+
+    <div class="content">
+
+      <h2 class="link-title text-[28px]">Blaze Skyblock Reset</h2>
+      <div class="link-tags">
+            <div class="tag">Skyblock</div>
+      </div>
+      <div class="link-date">
+        <time datetime="2022-04-17">17 April 2022</time>
+      </div>
+
+        <p>Skyblock is finally resetting after way too long! This reset has been the culmination of multiple months of work and we're pleased to announce it! In addition to the many</p>
+    </div>
+  </div>
+</a>
+
+
+                    <a class="panel post-link post tag-pixelmon" href="/blaze-pixelmon-reset/">
+
+  <div class="link-body">
+      <figure class="post-image">
+        <img alt="Blaze Pixelmon Reset" src="assets/img/hus0002.png">
+      </figure>
+
+    <div class="content">
+
+      <h2 class="link-title text-[28px]">Blaze Pixelmon Reset</h2>
+      <div class="link-tags">
+            <div class="tag">Pixelmon</div>
+      </div>
+      <div class="link-date">
+        <time datetime="2022-04-12">12 April 2022</time>
+      </div>
+
+        <p>Welcome to the start of the highly-anticipated (and requested) brand new era for Blaze Gaming Pixelmon! After countless hours of effort put in by our team, we are pleased to</p>
+    </div>
+  </div>
+</a>
+
+
+                    <a class="panel post-link post tag-skyblock featured" href="/skyblock-release/">
+
+  <div class="link-body">
+      <figure class="post-image">
+        <img alt="Skyblock Beta Release" src="assets/img/hus0003.png">
+      </figure>
+
+    <div class="content">
+
+      <h2 class="link-title text-[28px]">Skyblock Beta Release</h2>
+      <div class="link-tags">
+            <div class="tag">Skyblock</div>
+      </div>
+      <div class="link-date">
+        <time datetime="2022-04-02">2 April 2022</time>
+      </div>
+
+        <p>Hello everyone! It's been a long time coming but no we haven't forgot about Skyblock! Over the past months we've picked ourselves up and got on with a lot of</p>
+    </div>
+  </div>
+</a>
+
+
+    </section>
+
+  <nav class="panel pagination" role="navigation" data-pages="1">
+
+  <p class="page-number">Page
+    1
+    of
+    1</p>
+
+</nav>
+</main>
+<!-- InstanceEndEditable -->
+
+                </div>
+            </div>
+
+            <footer class="ndzn-footer">
+  <div class="container flex-column">
+    <div class="top flex justify-between flex-wrap py-12 xs:flex-col">
+      <section class="section section-about">
+        <h2>Giới thiệu</h2>
+        <p>Blaze Gaming is a Minecraft server network that is currently running
+          Pixelmon Reforged and Vanilla servers. We aim to have the best quality
+          minecraft servers out there!</p>
+      </section>
+
+      <section class="section section-links flex flex-col">
+        <h2>Liên kết</h2>
+        <div class="links flex flex-col flex-wrap gap-3 md:flex-row xs:justify-center">
+          <a href="#" target="_blank"><i class="mdi mdi-open-in-new"></i>Tham gia Discord</a>
+          <a href="/staff"><i class="mdi mdi-open-in-new"></i>Ứng tuyển Staff</a>
+          <a href="#"><i class="mdi mdi-open-in-new"></i>Donate</a>
+        </div>
+      </section>
+
+      <section class="section section-store">
+        <h2>Visit our Store</h2>
+        <p class="mb-4">In the Store you can buy cool perks! We wouldn't be here
+          today without your support. Thank you!</p>
+        <a class="btn is-orange" href="https://store.mc-blaze.com/">Visit Store</a>
+      </section>
+    </div>
+  </div>
+
+  <div class="bottom bg-[#12141A]">
+    <div class="container">
+      <p style="font-size: 12px" class="text-[#787B7F] text-[13px] mr-auto mb-0">2022 ©
+        <span class="text-copyright">Alpha MC</span>. We are not affiliated
+        with Mojang or Microsoft.</p>
+    </div>
+  </div>
+</footer>
+        </div>
+
+        <div class="modal modal-play is-slide-up" id="modal-play">
+  <div class="modal-dialog">
+    <div class="backdrop" id="backdrop" onclick="closeModal()"></div>
+    <div class="modal-box modal-body" id="modal-body">
+      <div class="logo"></div>
+      <i class="mdi mdi-close" onclick="closeModal()"></i>
+      <small class="uppercase font-black">How to join us on</small>
+      <big class="mt-0 leading-10 text-[39px]">Minecraft</big>
+
+      <div class="content-java">
+        <div class="step">Step 1</div>
+        <p>In Minecraft Java Edition, go to
+          <span>Multiplayer</span>, then
+          <span>Add Server</span></p>
+        <div class="step">Step 2</div>
+        <p>In the
+          <span>Server Address</span>
+          box, enter:
+          <span>play.thepondmc.com</span></p>
+        <div class="step">Step 3</div>
+        <p>Click <span>Done</span> and start your adventure!</p>
+      </div>
+
+      <div class="content-bedrock">
+        <iframe width="560" height="315" title="YouTube video player" src="https://www.youtube.com/embed/q9vboZUxFog" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        <p class="text-center w-[358px] mt-5">Join our Discord community and
+          check out the
+          <span>#how-to-play-channel</span></p>
+        <a class="btn is-white text-blue h-[60px] font-black text-[17px] leading-[60px]" href="https://discord.com/invite/c8EErCzTBw" target="_blank">
+          <img class="icon discord-icon w-[33px] h-[25px] relative top-0.5 mr-2" alt="" src="/assets/images/svg/discord.svg?v=b13c5aa825">
+          Join our Discord
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+        <script src="/assets/built/ndzn.js?v=b13c5aa825"></script>
+
+        
+
+
+    
+
+</body>
+<!-- InstanceEnd --></html>

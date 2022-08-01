@@ -4,8 +4,13 @@
 <!-- InstanceBeginEditable name="doctitle" -->
 <title></title>
 <!-- InstanceEndEditable -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+  <title>The Alpha</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="public/style.css">
+	<link rel="stylesheet" href="public/responsive.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +23,8 @@
         <div class="flex flex-col min-h-full" id="ndzn-app">
 
             <header class="ndzn-header" id="ndzn-header">
-  <canvas id="ndzn-header-canvas"></canvas>
-
+  <canvas id="canvas"></canvas>
+				<script type="text/javascript" src="assets/js/index.js"></script>
   <section class="top">
     <div class="container flex items-center">
       <nav class="nav-pages flex items-center">
@@ -33,7 +38,7 @@
                 <a class="nav-link flex-center" href="/rules.html">
                     <span>Luật</span>
                 </a>
-                <a class="nav-link flex-center" href="#">
+                <a class="nav-link flex-center" href="/support.html">
                     <span>Hỗ trợ</span>
                 </a>
 
@@ -48,7 +53,7 @@
       <nav class="nav-redirects flex items-center ml-auto">
         <i class="nav__discord-icon-small fa-brands fa-discord mr-7 xl:mr-4 relative top-1"></i>
         <div class="nav__store">
-            <a style="color: #643515 ;" class="nav-link btn" href="https://store.mc-blaze.com/">
+            <a style="color: #643515 ;" class="nav-link btn" href="#">
                 <i class="nav__store-icon fa-solid fa-coins"></i>
                 Donate
             </a>
@@ -193,25 +198,23 @@
     <div class="top flex justify-between flex-wrap py-12 xs:flex-col">
       <section class="section section-about">
         <h2>Giới thiệu</h2>
-        <p>Blaze Gaming is a Minecraft server network that is currently running
-          Pixelmon Reforged and Vanilla servers. We aim to have the best quality
-          minecraft servers out there!</p>
+        <p>The Alpha là một cộng đồng người chơi Minecraft, cung cấp máy chủ Minecraft Cross-phatform. Bạn có thể tham gia trò chơi trên các nền tảng khác nhau như máy tính (Java Edition) hay điện thoại (Bedrock Edition).</p>
       </section>
 
       <section class="section section-links flex flex-col">
         <h2>Liên kết</h2>
         <div class="links flex flex-col flex-wrap gap-3 md:flex-row xs:justify-center">
-          <a href="#" target="_blank"><i class="mdi mdi-open-in-new"></i>Tham gia Discord</a>
-          <a href="/staff"><i class="mdi mdi-open-in-new"></i>Ứng tuyển Staff</a>
-          <a href="#"><i class="mdi mdi-open-in-new"></i>Donate</a>
+          <a href="#" target="_blank"><i class="fa-solid fa-link"></i>Tham gia Discord</a>
+          <a href="https://www.facebook.com/vuduythanh.1205"><i class="fa-solid fa-link"></i>Ứng tuyển Staff</a>
+          <a href="#"><i class="fa-solid fa-link"></i>Donate</a>
         </div>
       </section>
 
       <section class="section section-store">
-        <h2>Visit our Store</h2>
-        <p class="mb-4">In the Store you can buy cool perks! We wouldn't be here
-          today without your support. Thank you!</p>
-        <a class="btn is-orange" href="https://store.mc-blaze.com/">Visit Store</a>
+        <h2>Ủng hộ</h2>
+        <p class="mb-4">Server của chúng tôi duy trì hoạt động dựa vào những đóng góp đến từ các thành viên. 
+			Sự đóng góp của bạn góp phần giúp cho server phát triển tốt hơn. Cảm ơn bạn rất nhiều!</p>
+        <a class="btn is-orange" href="#">Donate</a>
       </section>
     </div>
   </div>
@@ -219,8 +222,7 @@
   <div class="bottom bg-[#12141A]">
     <div class="container">
       <p style="font-size: 12px" class="text-[#787B7F] text-[13px] mr-auto mb-0">2022 ©
-        <span class="text-copyright">Alpha MC</span>. We are not affiliated
-        with Mojang or Microsoft.</p>
+        <span class="text-copyright">Alpha MC</span>. Chúng tôi không liên kết với Mojang hoặc Microsoft.</p>
     </div>
   </div>
 </footer>

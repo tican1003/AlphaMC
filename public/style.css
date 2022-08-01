@@ -1,5 +1,6 @@
 body {
 	line-height: 1;
+	scroll-behavior: smooth;
 }
 * {
 	box-sizing: border-box;
@@ -116,6 +117,7 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 body, html {
+	min-width: 1200px;
 	height: 100%;
 	scroll-behavior: smooth;
 }
@@ -576,6 +578,7 @@ h2 {
 	margin-bottom: 1rem;
 }
 .ndzn-footer .section p {
+	text-align: justify;
 	margin-bottom: 0px;
 	font-size: 13px;
 	line-height: 1.75rem;
@@ -605,6 +608,9 @@ h2 {
 	--tw-text-opacity:1: ;
 	color: rgb(164 166 171/var(--tw-text-opacity));
 }
+.ndzn-footer .section-links i {
+	margin-right: 8px;
+}
 .mdi-open-in-new::before {
 	content: "\F03CC";
 }
@@ -623,6 +629,7 @@ h2 {
 	max-width: calc(100% - 40px);
 }
 .panel {
+	cursor: auto;
 	border-radius: 6px;
 	--tw-bg-opacity:1: ;
 	background-color: rgba(41, 43, 52, 1);
@@ -634,6 +641,7 @@ h2 {
 	color: #fff;
 }
 .ndzn-homepage .welcome-section {
+	margin-top: 28px;
 	margin-bottom: 2.5rem;
 	background-image: url("../assets/img/welcome-background.png");
 	background-size: cover;
@@ -867,6 +875,7 @@ h1 {
 	line-height: 1.75rem;
 }
 .ndzn-homepage .welcome-section p {
+	text-align: justify;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1.25rem;
@@ -1110,7 +1119,7 @@ button, select {
 	--tw-text-opacity:1: ;
 	color: rgb(254 135 30/var(--tw-text-opacity));
 }
-#ndzn-header-canvas {
+#canvas {
 	opacity: 0.5;
 	position: absolute;
 	top: 0px;

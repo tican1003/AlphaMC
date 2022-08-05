@@ -572,7 +572,7 @@ h2 {
 	width: 1.5rem;
 	border-radius: 9999px;
 	--tw-bg-opacity:1: ;
-	background-color: rgb(254 135 30/var(--tw-bg-opacity));
+	background-color: rgb(254 135 30);
 }
 .mb-4 {
 	margin-bottom: 1rem;
@@ -858,7 +858,7 @@ h2 {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	--tw-text-opacity:1: ;
-	color: rgb(139 81 21/var(--tw-text-opacity));
+	color: #8b5115;
 }
 h1 {
 	font-size: 2.25rem;
@@ -1307,6 +1307,9 @@ button, select {
 }
 .ndzn-header .mobile-nav-btn {
 	display: none;
+}
+.ndzn-header .mobile-nav-btn i {
+	margin-right: 8px;
 }
 .mdi-menu::before {
 	content: "\F035C";

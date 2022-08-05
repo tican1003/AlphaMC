@@ -6,5 +6,98 @@
 
 }
 @media screen and (max-width: 767px) {
-    
+    body, html {
+        width: 100%;
+        min-width: 300px;
+    }
+
+    /* HEADER */
+    .top>div {
+        margin: 0;
+        width: 100%;
+        height: 100px;
+    }
+    .ndzn-header .mobile-nav-btn {
+        display: block;
+        font-size: 20px;
+    }
+    .navigation-web,
+    .header-logo,
+    .minecraft-icon,
+    .devider,
+    .header-discord,
+    .nav__discord-icon-small {
+        display: none !important;
+    }
+    .ndzn-header .text .small {
+        color: rgba(255, 255, 255, 0.6) !important;
+    }
+    .text-right {
+        text-align: center;
+    }
+    .nav__store {
+        margin-left: 0;
+        margin-right: 16px;
+    }
+    .ndzn-header .bottom {
+        margin-top: 0;
+    }
+    .ndzn-header .nav-link.btn {
+        height: 46px;
+        padding: 0 28px;
+    }
+
+    /* BODY */
+    .container {
+        width: calc(100% - 28px);
+    }
+    .page-body {
+        padding: 0;
+    }
+    .page-body>div {
+        margin: 14px;
+        width: calc(100%-28px);
+    }
+    .ndzn-homepage .welcome-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 32px;
+    }
+    .ndzn-homepage .welcome-section .text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ndzn-homepage .welcome-section h1 {
+        font-size: 24px;
+        text-align: center;
+        width: calc(100% - 48px);
+    }
+    .ndzn-homepage .links {
+        margin-top: 32px;
+    }
+    .ndzn-homepage .section-title::before {
+        display: none;
+    }
+    .ndzn-homepage .section-title::after {
+        display: none;
+    }
+    .ndzn-homepage .section-title span {
+        font-size: 26px;
+        font-weight: 900;
+        letter-spacing: 0.3px;
+    }
+    .ndzn-homepage .posts-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ndzn-footer .section h2 {
+        text-align: center;
+        text-decoration: dashed;
+        text-decoration-color: red;
+    }
+    .ndzn-footer .section h2::after {
+        left: calc(50% - 12px);
+    }
 }

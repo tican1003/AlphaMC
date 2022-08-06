@@ -100,4 +100,21 @@
     .ndzn-footer .section h2::after {
         left: calc(50% - 12px);
     }
+	.ndzn-footer .section-about {
+		max-width: none;
+	}
+    .ndzn-footer .section-links {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .ndzn-footer .section-links > div {
+        display: flex;
+        align-items: center;
+    }
+    .ndzn-footer .section-store {
+        max-width: none;
+    }
+    .ndzn-footer .section-store .btn {
+        max-width: none;
+    }
 }

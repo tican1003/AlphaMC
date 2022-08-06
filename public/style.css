@@ -244,7 +244,6 @@ a, button {
 	width: 733px;
 	--tw-rotate:-9deg: ;
 	transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-	background-image: url(../images/logo-big.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	opacity: 0.05;
@@ -1080,7 +1079,6 @@ button, select {
 	margin-right: auto;
 	height: 200px;
 	width: 350px;
-	background-image: url(../images/logo-big.png);
 	background-size: contain;
 	background-position: 50%;
 	background-repeat: no-repeat;

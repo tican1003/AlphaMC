@@ -24,7 +24,7 @@
 
             <header class="ndzn-header" id="ndzn-header">
   <canvas id="canvas"></canvas>
-				<script type="text/javascript" src="assets/js/index.js"></script>
+				<script type="text/javascript" src="assets/js/snow__canvas.js"></script>
   <section class="top">
     <div class="container flex items-center">
       <nav class="nav-pages flex items-center">
@@ -45,7 +45,7 @@
         </div>
 
         <button class="mobile-nav-btn nav-link flex items-center" onclick="openMobileMenu()">
-          <i class="mdi mdi-menu mr-2.5 relative text-[28px]"></i>
+          <i class="fa-solid fa-bars"></i>
           <span>Menu</span>
         </button>
       </nav>
@@ -94,21 +94,7 @@
 
   </section>
 </header>
-
-<div class="modal is-slide-up" id="copy-ip-modal" aria-hidden="true">
-  <div tabindex="-1" class="modal-dialog" data-modal-close="">
-    <div class="modal-box modal-body" role="dialog" data-modal-close="" aria-modal="true">
-      <div class="header-logo"></div>
-      <p class="desc">Copied to Clipboard</p>
-      <h1 class="ip">play.mc-blaze.com</h1>
-      <div class="btn btn-success">
-        <span>We can't wait to see you in-game!</span>
-        <span>Click anywhere to close.</span>
-      </div>
-    </div>
-  </div>
-</div>
-            <div class="mobile-nav" id="mobile-nav">
+<div class="mobile-nav" id="mobile-nav">
   <div class="backdrop" onclick="closeMobileMenu()"></div>
   <div class="nav-collapse">
     <button class="close-menu" onclick="closeMobileMenu()"><i class="mdi mdi-close"></i></button>
@@ -118,28 +104,22 @@
       <a class="mr-1" href="#" target="_blank"><img alt="Discord" src="/assets/images/svg/discord-mobile.svg?v=b13c5aa825"></a>
     </div>
     <div class="nav-content">
-          <a class="nav-link flex-center" href="https://mc-blaze.com">
-        <span>Home</span>
+          <a class="nav-link flex-center" href="/index.html">
+        <span>Trang chủ</span>
     </a>
-    <a class="nav-link flex-center" href="https://mc-blaze.com/vote/">
-        <span>Vote</span>
+    <a class="nav-link flex-center" href="#">
+        <span>Cộng đồng</span>
     </a>
-    <a class="nav-link flex-center" href="https://mc-blaze.com/staff/">
-        <span>Staff</span>
+    <a class="nav-link flex-center" href="/rules.html">
+        <span>Luật</span>
     </a>
-    <a class="nav-link flex-center" href="https://mc-blaze.com/how-to-play/">
-        <span>Play</span>
-    </a>
-    <a class="nav-link flex-center" href="https://mc-blaze.com/rules/">
-        <span>Rules</span>
-    </a>
-    <a class="nav-link flex-center" href="https://mc-blaze.com/support/">
-        <span>Support</span>
+    <a class="nav-link flex-center" href="/support.html">
+        <span>Hỗ trợ</span>
     </a>
 
-      <a class="nav-link btn is-orange" href="https://store.mc-blaze.com/">
+      <a class="nav-link btn is-orange" href="#">
         <i class="mdi mdi-storefront text-[22px] mr-2.5"></i>
-        Store
+        Donate
       </a>
     </div>
   </div>
@@ -271,16 +251,6 @@
     </div>
   </div>
 </div>
-
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-        <script src="/assets/built/ndzn.js?v=b13c5aa825"></script>
-
-        
-
-
-    
-
+<script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 <!-- InstanceEnd --></html>

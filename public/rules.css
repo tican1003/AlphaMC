@@ -63,3 +63,32 @@
     color: #643515;
     background-image: linear-gradient(180deg,#ffa351,#fe871e);
 }
+
+/* RESPONSIVE */
+.page-body .container {
+    padding: 0 !important;
+}
+.page-body .container .panel {
+    padding: 40px 0 20px 0 !important;
+}
+.ndzn-page .post-content, .ndzn-post .post-content {
+    margin: 20px !important;
+    padding: 0 !important;
+}
+.notification {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+}
+.notification p {
+    margin: 16px 0;
+}
+.post-content-span {
+    margin: 40px 0 16px 0;
+}
+.post-content > p {
+    text-align: center;
+}
+.post-content > a {
+    width: 100%;
+}

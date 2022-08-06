@@ -117,4 +117,7 @@
     .ndzn-footer .section-store .btn {
         max-width: none;
     }
+    .ndzn-footer .bottom p {
+        text-align: center;
+    }
 }
